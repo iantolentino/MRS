@@ -7,7 +7,7 @@ A browser-based room reservation system using HTML, CSS, JavaScript, PHP, and SQ
 - Public monthly calendar and room request form; requests remain pending until staff review.
 - Urgent in-person requests are limited to 30 minutes, checked on the server.
 - Overlap checks include pending and approved reservations. Saves are protected by SQLite transactions and report conflicts instead of overwriting a newer schedule.
-- Super Admin creates Admin accounts. Admins have scheduling, room, and account viewing access, and can view database records. Only the Super Admin can edit database records.
+- Admins have full scheduling, room, and account-management access. Only the Super Admin can edit database records; Admins can view them.
 - Users can change their own passwords. Passwords use PHP's `password_hash()` and are never displayed in the database screen.
 - Polling every three seconds keeps the public calendar and staff dashboard current.
 
